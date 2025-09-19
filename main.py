@@ -3,7 +3,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 from deep_translator import GoogleTranslator
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "你的token")
+# 🚨 直接写死 Token（仅测试用，推荐改成环境变量）
+BOT_TOKEN = "8416318151:AAGAs0i3NXVaJPFRT4tGsuLGDfwXJPFZDAU"
 
 async def translate_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message and update.message.text:
