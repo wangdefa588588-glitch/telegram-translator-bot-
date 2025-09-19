@@ -1,3 +1,2 @@
 python-telegram-bot==20.3
 deep-translator==1.11.4
-flask==3.0.0   # 如果你用 webhook
